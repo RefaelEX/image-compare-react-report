@@ -1,0 +1,40 @@
+[
+  {
+    "left": "c53bde79-5b4c-4474-b1ef-2149ce514f3b.webp",
+    "right": "right_c53bde79-5b4c-4474-b1ef-2149ce514f3b.webp",
+    "message": "{\"Format\":\"image/jpeg\",\"Tests\":[{\"Attribute\":\"metadata_ab\",\"BestScore\":\"{}\",\"ActualScore\":\"{\\\"XResolution\\\":\\\"96 -> 150\\\",\\\"YResolution\\\":\\\"96 -> 150\\\",\\\"ImageWidth\\\":\\\"246 -> 245\\\",\\\"ImageHeight\\\":\\\"57 -> 56\\\",\\\"ImageSize\\\":\\\"\\\\\\\"246x57\\\\\\\" -> \\\\\\\"245x56\\\\\\\"\\\"}\",\"ExpectedThreshold\":\"\",\"ActualThreshold\":\"\"},{\"Attribute\":\"ssimulacra2_ab\",\"BestScore\":100,\"ActualScore\":\"Images dimension mismatch\"},{\"Attribute\":\"psnr_ab\",\"BestScore\":\"inf\",\"ActualScore\":\"Width and height of input videos must be same.\"}]}",
+    "spec_id": "Lorem ipsum odor amet, consectetuer adipiscing elit. Aliquet lacus molestie, suspendisse luctus facilisis turpis pellentesque risus. Eleifend nunc consectetur vestibulum vehicula vel risus tempor. Iaculis lobortis congue aenean fermentum eget vivamus. Habitant metus nam placerat gravida purus.",
+    "resource_type": "image"
+  },
+
+
+  
+  {
+    "left": "c53bde79-5b4c-4474-b1ef-2149ce514f3b.webp",
+    "right": "right_c53bde79-5b4c-4474-b1ef-2149ce514f3b.webp",
+    "message": "{\"Format\":\"image/jpeg\",\"Tests\":[{\"Attribute\":\"ssimulacra2_ab\",\"BestScore\":100,\"ActualScore\":-67.72759137,\"ExpectedThreshold\":\"30%\",\"ActualThreshold\":\"167.72759137%\"},{\"Attribute\":\"psnr_ab\",\"BestScore\":\"inf\",\"ActualScore\":20.626951,\"ExpectedThreshold\":\"40\",\"ActualThreshold\":\"-19.373049\"}]}",
+    "spec_id": "Lorem ipsum odor amet, consectetuer adipiscing elit. Aliquet lacus molestie, suspendisse luctus facilisis turpis pellentesque risus. Eleifend nunc consectetur vestibulum vehicula vel risus tempor.",
+    "resource_type": "image"
+  },
+  {
+    "left": "c53bde79-5b4c-4474-b1ef-2149ce514f3b.webp",
+    "right": "right_c53bde79-5b4c-4474-b1ef-2149ce514f3b.webp",
+    "message": "{\"Format\":\"image/jpeg\",\"Tests\":[{\"Attribute\":\"ssimulacra2_ab\",\"BestScore\":100,\"ActualScore\":-498.43366864,\"ExpectedThreshold\":\"30%\",\"ActualThreshold\":\"598.43366864%\"},{\"Attribute\":\"psnr_ab\",\"BestScore\":\"inf\",\"ActualScore\":16.564195,\"ExpectedThreshold\":\"40\",\"ActualThreshold\":\"-23.435805\"}]}",
+    "spec_id": "Lorem ipsum odor amet, consectetuer adipiscing elit. Aliquet lacus molestie, suspendisse luctus facilisis turpis pellentesque risus. Eleifend nunc consectetur vestibulum vehicula vel risus tempor.",
+    "resource_type": "image"
+  },
+  {
+    "left": "c53bde79-5b4c-4474-b1ef-2149ce514f3b.webp",
+    "right": "right_c53bde79-5b4c-4474-b1ef-2149ce514f3b.webp",
+    "message": "{\"Format\":\"image/jpeg\",\"Tests\":[{\"Attribute\":\"ssimulacra2_ab\",\"BestScore\":100,\"ActualScore\":-25.92264106,\"ExpectedThreshold\":\"30%\",\"ActualThreshold\":\"125.92264105999999%\"},{\"Attribute\":\"psnr_ab\",\"BestScore\":\"inf\",\"ActualScore\":21.463939,\"ExpectedThreshold\":\"40\",\"ActualThreshold\":\"-18.536061\"}]}",
+    "spec_id": "Lorem ipsum odor amet, consectetuer adipiscing elit. Aliquet lacus molestie, suspendisse luctus facilisis turpis pellentesque risus. Eleifend nunc consectetur vestibulum vehicula vel risus tempor.",
+    "resource_type": "image"
+  },
+  {
+    "left": "c53bde79-5b4c-4474-b1ef-2149ce514f3b.webp",
+    "right": "right_c53bde79-5b4c-4474-b1ef-2149ce514f3b.webp",
+    "message": "{\"Format\":\"video/mp4\",\"Tests\":[{\"Attribute\":\"vmaf_ab\",\"BestScore\":100,\"ActualScore\":75.134036,\"ExpectedThreshold\":\"20%\",\"ActualThreshold\":\"24.865964000000005%\"},{\"Attribute\":\"psnr_ab\",\"BestScore\":\"inf\",\"ActualScore\":32.736036,\"ExpectedThreshold\":\"40\",\"ActualThreshold\":\"-7.263964000000001\"}]}",
+    "spec_id": "Lorem ipsum odor amet, consectetuer adipiscing elit. Aliquet lacus molestie, suspendisse luctus facilisis turpis pellentesque risus. Eleifend nunc consectetur vestibulum vehicula vel risus tempor.",
+    "resource_type": "video"
+  }
+]
