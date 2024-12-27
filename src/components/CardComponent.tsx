@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { SideBySideViewerComponent } from './SideBySideViewerComponent';
 import { SliderViewerComponent } from './SliderViewerComponent';
+import { ToggleViewer } from './ToggleViewer';
+
 
 interface Props {
   left: string;
@@ -11,7 +13,7 @@ interface Props {
 }
 
 export const CardComponent: React.FC<Props> = ({ left, right, message, specId, resourceType }) => {
-  const [activeView, setActiveView] = useState<'side-by-side' | 'slider'>('side-by-side');
+  const [activeView, setActiveView] = useState<'side-by-side' | 'slider' | 'toggle'>('side-by-side');
 
   return (
     <div className="card-wrapper-div">
@@ -20,24 +22,32 @@ export const CardComponent: React.FC<Props> = ({ left, right, message, specId, r
       <div className="card-resource-type">{resourceType}</div>
       <div className="card-buttons">
         <button
-          className={`toggle-button ${activeView === 'side-by-side' ? 'active' : ''}`}
+          className={`toggle-button ${activeView}`}
           onClick={() => setActiveView('side-by-side')}
         >
           Side by Side
         </button>
         <button
-          className={`toggle-button ${activeView === 'slider' ? 'active' : ''}`}
+          className={`toggle-button ${activeView}`}
           onClick={() => setActiveView('slider')}
         >
           Slider
         </button>
+        <button
+          className={`toggle-button ${activeView}`}
+          onClick={() => setActiveView('toggle')}
+        >
+          Toggle
+        </button>
       </div>
       <div className="card-comparison-wrapper">
         {activeView === 'side-by-side' ? (
-          <SideBySideViewerComponent left={left} right={right} />
-        ) : (
-          <SliderViewerComponent left={left} right={right} />
-        )}
+            <SideBySideViewerComponent left={left} right={right} />
+        ) : ( activeView === 'slider' ? (
+            <SliderViewerComponent left={left} right={right} />
+        ) : ( 
+            <ToggleViewer left={left} right={right} />
+        ))}
       </div>
     </div>
   );
